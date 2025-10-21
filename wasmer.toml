@@ -1,0 +1,19 @@
+[package]
+name = "thenotary/hello"
+version = "0.1.0"
+description = "This repo is a POC for validating changes to wasix-org/libc used to target wasix for rust builds"
+readme = "./README.md"
+entrypoint = "hello"
+
+[[module]]
+name = "hello"
+source = "./target/wasm32-wasmer-wasi/release/app.wasm"
+
+[[command]]
+name = "hello"
+module = "hello"
+runner = "https://webc.org/runner/wasi"
+
+[command.annotations.wasi]
+atom = "hello"
+
