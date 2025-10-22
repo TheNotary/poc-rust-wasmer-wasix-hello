@@ -2,10 +2,10 @@
 
 ## Build
 
-Bash only supports wasi, not wasix!
+This method is not supported by sharrattj/bash for some reason.
 
 ```
-rustup target add wasm32-wasip1
-cargo build --target=wasm32-wasip1 --release
+cargo install cargo-wasix
+cargo wasix build --release
 ```
 

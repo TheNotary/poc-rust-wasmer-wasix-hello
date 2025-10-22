@@ -3,13 +3,13 @@ name = "thenotary/wasix-hello"
 version = "0.1.3"
 description = "This repo is a POC for validating changes to wasix-org/libc used to target wasix for rust builds"
 readme = "./README.md"
-entrypoint = "hello"
+entrypoint = "hello-wasix"
 
 [[module]]
-name = "hello"
-source = "target/wasm32-wasip1/release/app.wasm"
+name = "hello-wasix"
+source = "target/wasm32-wasmer-wasi/release/app.wasm"
 
 [[command]]
-name = "hello"
-module = "hello"
+name = "hello-wasix"
+module = "hello-wasix"
 runner = "https://webc.org/runner/wasi"
