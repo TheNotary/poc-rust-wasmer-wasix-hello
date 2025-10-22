@@ -1,5 +1,5 @@
 [package]
-name = "thenotary/hello"
+name = "thenotary/wasix-hello"
 version = "0.1.3"
 description = "This repo is a POC for validating changes to wasix-org/libc used to target wasix for rust builds"
 readme = "./README.md"
